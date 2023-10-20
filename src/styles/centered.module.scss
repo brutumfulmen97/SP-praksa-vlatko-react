@@ -1,0 +1,23 @@
+@import "../utils/vars";
+
+.section__centered {
+    padding-top: $padding-y;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: $gap;
+    h3 {
+        width: 80%;
+    }
+    p {
+        width: 80%;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 300;
+        @media #{$desktop} {
+            width: 60%;
+        }
+    }
+}

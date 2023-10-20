@@ -1,0 +1,15 @@
+@import "../utils/vars";
+
+.logo_divider {
+    padding-top: $padding-y;
+    padding-bottom: $padding-y;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30vh;
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
