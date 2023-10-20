@@ -3,6 +3,7 @@ import logo from "../assets/header-logo.svg";
 import pdf from "../assets/pdf.svg";
 import sat from "../assets/sat.svg";
 import { useEffect, useState } from "react";
+import { useWindowReSize } from "../hooks/useWindowResize";
 
 export default function Header() {
     const [isTabletMenuOpen, setIsTabletMenuOpen] = useState(false);
@@ -10,28 +11,20 @@ export default function Header() {
     const [isTablet, setIsTablet] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
 
+    const width = useWindowReSize();
+
     useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth <= 768) {
-                setIsMobile(true);
-            } else {
-                setIsMobile(false);
-            }
-            if (window.innerWidth > 768 && window.innerWidth <= 1440) {
-                setIsTablet(true);
-            } else {
-                setIsTablet(false);
-            }
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        console.log(isMobile, isTablet);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, [isMobile, isTablet]);
+        if (width >= 1440) {
+            setIsTablet(false);
+            setIsMobile(false);
+        } else if (width >= 768) {
+            setIsTablet(true);
+            setIsMobile(false);
+        } else {
+            setIsTablet(false);
+            setIsMobile(true);
+        }
+    }, [width]);
 
     return (
         <header>
