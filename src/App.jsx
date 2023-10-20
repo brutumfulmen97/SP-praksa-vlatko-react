@@ -8,6 +8,8 @@ import Cta from "./components/Cta";
 import Partner from "./components/Partner";
 import Awards from "./components/Awards";
 import Kurs from "./components/Kurs";
+import Spices from "./components/Spices";
+import Dryaged from "./components/Dryaged";
 
 function App() {
     return (
@@ -16,11 +18,13 @@ function App() {
             <Landing />
             <main>
                 <Divider />
+                <Dryaged />
                 <Menu />
                 <Kurs />
                 <Divider />
                 <Centered />
                 <Divider />
+                <Spices />
                 <Cta />
                 <Partner />
                 <Divider />

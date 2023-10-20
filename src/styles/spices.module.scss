@@ -1,0 +1,54 @@
+@import "../utils/vars";
+
+.section__spices {
+    background: #a62120;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    @media screen and (min-width: 1120px) {
+        flex-direction: row;
+    }
+
+    .section__spices_info {
+        width: 100%;
+        padding-inline: 10%;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+
+        @media screen and (min-width: 1120px) {
+            width: 45%;
+            margin-left: auto;
+            padding: 0 !important;
+            padding-right: 10% !important;
+            text-align: start;
+        }
+        h2 {
+            font-weight: 700;
+            line-height: 42px;
+            letter-spacing: 0em;
+            margin-bottom: 2rem;
+        }
+        h3 {
+            margin-bottom: 2rem;
+        }
+        p {
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .section__spices_image {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 1120px) {
+            width: 50vw;
+        }
+    }
+}
