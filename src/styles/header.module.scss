@@ -1,10 +1,8 @@
 @import "../utils/vars";
 
-.red {
-    color: red;
+.mobile-menu-animation {
+    transform: scaleX(1) !important;
 }
-
-$primary-color: green;
 
 header {
     background: $primary-color;
@@ -59,7 +57,7 @@ header {
             }
         }
 
-        .header__nav-xl {
+        .header__nav_xl {
             display: none;
 
             @media #{$desktop} {
@@ -68,7 +66,7 @@ header {
             }
         }
 
-        .header__nav-md {
+        .header__nav_md {
             display: none;
 
             .dropdown {
@@ -76,7 +74,7 @@ header {
                 display: inline-block;
                 cursor: pointer;
 
-                .dropdown-content {
+                .dropdown_content {
                     border-radius: 10px;
                     display: none;
                     position: absolute;
@@ -122,7 +120,7 @@ header {
         }
     }
 
-    .header__nav-sm {
+    .header__nav_sm {
         min-width: 2.5rem;
         max-width: 2rem;
         margin-inline: $gap;
@@ -140,8 +138,8 @@ header {
             padding: 0rem 0.3rem;
         }
 
-        .mobile-menu {
-            .close-btn {
+        .mobile_menu {
+            .close_btn {
                 border-radius: 50%;
                 position: absolute;
                 z-index: 1000;
