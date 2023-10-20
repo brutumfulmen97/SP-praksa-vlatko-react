@@ -10,6 +10,7 @@ import Awards from "./components/Awards";
 import Kurs from "./components/Kurs";
 import Spices from "./components/Spices";
 import Dryaged from "./components/Dryaged";
+import Slider from "./components/Slider";
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
                 <Divider />
                 <Awards />
                 <Divider />
+                <Slider />
             </main>
             <Footer />
         </>

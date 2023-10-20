@@ -1,0 +1,91 @@
+@import "../utils/vars";
+
+.section__swiper {
+    width: 100%;
+    padding-bottom: 2rem;
+    .slider_button {
+        margin-top: 2rem;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+
+    .swiper {
+        height: auto;
+        width: 100%;
+        position: relative;
+
+        .znak {
+            position: absolute;
+            z-index: 1000;
+            bottom: 5%;
+            right: 45%;
+        }
+
+        .buttons {
+            position: absolute;
+            top: 50%;
+            z-index: 1000;
+            width: 100%;
+            display: flex;
+            padding-inline: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .swiper_button_prev,
+        .swiper_button_next {
+            background: rgba(105, 105, 105, 0.453);
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        .swiper_slide {
+            width: 500px;
+
+            .slide {
+                padding: 2rem;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                width: 80%;
+                background-color: #2a2a2a;
+                margin-inline: auto;
+                height: 80%;
+                margin-bottom: 2rem;
+
+                p,
+                h4 {
+                    color: rgba(210, 210, 210, 0.705);
+                }
+            }
+        }
+        h4,
+        p {
+            text-align: center;
+        }
+
+        p {
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0em;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-weight: 700;
+            line-height: 42px;
+            letter-spacing: 0em;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    }
+}
