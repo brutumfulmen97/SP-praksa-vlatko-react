@@ -11,27 +11,33 @@ import Kurs from "./components/Kurs";
 import Spices from "./components/Spices";
 import Dryaged from "./components/Dryaged";
 import Slider from "./components/Slider";
+import { useState } from "react";
+import { ThemeContext } from "./context/theme-context";
+import "./App.scss";
 
 function App() {
+    const [theme, setTheme] = useState("dark");
     return (
         <>
-            <Header />
-            <Landing />
-            <main>
-                <Dryaged />
-                <Kurs />
-                <Centered />
-                <Divider />
-                <Menu />
-                <Spices />
-                <Cta />
-                <Partner />
-                <Divider />
-                <Awards />
-                <Divider />
-                <Slider />
-            </main>
-            <Footer />
+            <ThemeContext.Provider value={{ theme, setTheme }}>
+                <Header />
+                <main className={`theme-${theme}`}>
+                    <Landing />
+                    <Dryaged />
+                    <Kurs />
+                    <Centered />
+                    <Divider />
+                    <Menu />
+                    <Spices />
+                    <Cta />
+                    <Partner />
+                    <Divider />
+                    <Awards />
+                    <Divider />
+                    <Slider />
+                </main>
+                <Footer />
+            </ThemeContext.Provider>
         </>
     );
 }

@@ -2,14 +2,17 @@ import styles from "../styles/header.module.scss";
 import logo from "../assets/header-logo.svg";
 import pdf from "../assets/pdf.svg";
 import sat from "../assets/sat.svg";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useWindowReSize } from "../hooks/useWindowResize";
+import { ThemeContext } from "../context/theme-context";
 
 export default function Header() {
     const [isTabletMenuOpen, setIsTabletMenuOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isTablet, setIsTablet] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+
+    const { theme, setTheme } = useContext(ThemeContext);
 
     const width = useWindowReSize();
 
@@ -30,7 +33,13 @@ export default function Header() {
         <header>
             <div className={styles.header__main}>
                 <div className={styles.header__logo}>
-                    <img src={logo} alt="logo" />
+                    <img
+                        src={logo}
+                        alt="logo"
+                        onClick={() => {
+                            setTheme(theme === "dark" ? "light" : "dark");
+                        }}
+                    />
                 </div>
                 <nav className={styles.header__nav}>
                     {!isMobile && !isTablet && (
