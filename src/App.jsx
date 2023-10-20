@@ -1,9 +1,11 @@
-import "./App.scss";
+import Header from "./components/Header";
+import Landing from "./components/Landing";
 
 function App() {
     return (
         <>
-            <h1>cao</h1>
+            <Header />
+            <Landing />
         </>
     );
 }
