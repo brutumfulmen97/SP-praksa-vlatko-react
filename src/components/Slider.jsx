@@ -9,6 +9,7 @@ import Button from "./Button";
 import znak from "../assets/znak.svg";
 import rostilj from "../assets/rostilj.svg";
 import zvezde from "../assets/zvezde.svg";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export default function Slider() {
     return (
@@ -116,10 +117,10 @@ export default function Slider() {
                 </Swiper>
                 <div className={styles.buttons}>
                     <div className={`${styles.swiper_button_prev} prev`}>
-                        👈
+                        <ArrowLeft />
                     </div>
                     <div className={`${styles.swiper_button_next} next`}>
-                        👉
+                        <ArrowRight />
                     </div>
                 </div>
             </div>

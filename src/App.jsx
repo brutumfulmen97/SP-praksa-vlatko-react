@@ -14,12 +14,15 @@ import Slider from "./components/Slider";
 import { useState } from "react";
 import { ThemeContext } from "./context/theme-context";
 import "./App.scss";
+import Popup from "./components/Popup";
 
 function App() {
     const [theme, setTheme] = useState("dark");
+
     return (
         <>
             <ThemeContext.Provider value={{ theme, setTheme }}>
+                <Popup />
                 <Header />
                 <main className={`theme-${theme}`}>
                     <Landing />

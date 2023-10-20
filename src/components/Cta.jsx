@@ -2,10 +2,16 @@ import Button from "./Button";
 import styles from "../styles/cta.module.scss";
 import daska from "../assets/daska.png";
 
+import { Parallax } from "react-parallax";
+
 export default function Cta() {
     return (
-        <div className={styles.section__cta}>
-            <img src={daska} alt="daska" />
+        <Parallax
+            className={styles.section__cta}
+            bgImage={daska}
+            strength={500}
+            blur={{ min: -15, max: 15 }}
+        >
             <div className={styles.filter}>
                 <div className={styles.section__cta_info}>
                     <h2
@@ -27,6 +33,6 @@ export default function Cta() {
                     </Button>
                 </div>
             </div>
-        </div>
+        </Parallax>
     );
 }
