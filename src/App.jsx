@@ -5,6 +5,7 @@ import Menu from "./components/Menu";
 import Divider from "./components/Divider";
 import Centered from "./components/Centered";
 import Cta from "./components/Cta";
+import Partner from "./components/Partner";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             <Centered />
             <Divider />
             <Cta />
+            <Partner />
             <Footer />
         </>
     );

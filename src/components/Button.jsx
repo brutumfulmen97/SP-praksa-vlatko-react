@@ -1,8 +1,9 @@
 import styles from "../styles/button.module.scss";
 
-export default function Button({ variant, children }) {
+export default function Button({ variant, style, children }) {
     return (
         <div
+            style={style}
             className={
                 variant === "primary"
                     ? styles.btn_primary

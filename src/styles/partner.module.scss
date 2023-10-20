@@ -1,0 +1,48 @@
+@import "../utils/vars";
+
+.section__partner {
+    width: 100%;
+    padding-inline: 20%;
+    padding-top: $padding-y;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    @media #{$tablet} {
+        padding-inline: 10%;
+    }
+
+    @media #{$laptop} {
+        flex-direction: row;
+    }
+
+    @media #{$desktop} {
+        padding-inline: 20%;
+    }
+
+    .section__partner_image {
+        width: 100%;
+        svg {
+            max-width: 18rem;
+            path {
+                fill: white;
+            }
+        }
+    }
+
+    .section__partner_info {
+        width: 100%;
+        h2 {
+            font-weight: 700;
+            line-height: 42px;
+            letter-spacing: 0em;
+            margin-bottom: 3rem;
+        }
+
+        @media #{$laptop} {
+            text-align: left;
+        }
+    }
+}
