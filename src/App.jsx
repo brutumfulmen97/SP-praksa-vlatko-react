@@ -7,6 +7,7 @@ import Centered from "./components/Centered";
 import Cta from "./components/Cta";
 import Partner from "./components/Partner";
 import Awards from "./components/Awards";
+import Kurs from "./components/Kurs";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <main>
                 <Divider />
                 <Menu />
+                <Kurs />
                 <Divider />
                 <Centered />
                 <Divider />

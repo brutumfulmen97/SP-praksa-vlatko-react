@@ -1,0 +1,65 @@
+@import "../utils/vars";
+
+.section__kurs {
+    background: $primary-color;
+    color: white;
+
+    @media screen and (min-width: 1120px) {
+        display: flex;
+    }
+    @media #{$desktop} {
+    }
+
+    .section__kurs_info {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1.5rem;
+        padding: 3rem 0;
+
+        @media screen and (min-width: 1120px) {
+            text-align: left;
+            align-items: start;
+            padding-left: 10%;
+        }
+
+        @media #{$desktop} {
+            padding-left: 20%;
+        }
+
+        h2 {
+            width: 60%;
+            font-weight: 700;
+            line-height: 42px;
+            letter-spacing: 0em;
+        }
+        li {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        button {
+            max-width: 50%;
+        }
+    }
+
+    .section__kurs_image {
+        width: 100%;
+        img {
+            width: 100%;
+            margin-bottom: -4px;
+        }
+
+        @media screen and (min-width: 1120px) {
+            width: 50vw;
+            height: 100%;
+            object-fit: cover;
+            margin-left: auto;
+        }
+    }
+}
