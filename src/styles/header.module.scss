@@ -58,16 +58,12 @@ header {
         }
 
         .header__nav_xl {
-            display: none;
-
-            @media #{$desktop} {
-                display: flex !important;
-                gap: 1rem !important;
-            }
+            display: flex !important;
+            gap: 1rem !important;
         }
 
         .header__nav_md {
-            display: none;
+            display: flex !important;
 
             .dropdown {
                 position: relative;
@@ -76,7 +72,6 @@ header {
 
                 .dropdown_content {
                     border-radius: 10px;
-                    display: none;
                     position: absolute;
                     top: 20px;
                     right: 10px;
@@ -108,14 +103,6 @@ header {
                 &:hover .dropdown-content {
                     display: block;
                 }
-            }
-
-            @media #{$tablet} {
-                display: flex !important;
-            }
-
-            @media #{$desktop} {
-                display: none !important;
             }
         }
     }
@@ -158,7 +145,7 @@ header {
             top: 0;
             right: 0;
             transform-origin: 0%;
-            transform: scaleX(0);
+            // transform: scaleX(0);
             transition: all 0.3s ease-in-out;
             z-index: 10;
             width: 100%;
@@ -177,10 +164,6 @@ header {
             a:hover {
                 background-color: gray;
             }
-        }
-
-        @media #{$tablet} {
-            display: none;
         }
     }
 
