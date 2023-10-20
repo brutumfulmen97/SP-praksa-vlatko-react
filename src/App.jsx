@@ -17,13 +17,11 @@ function App() {
             <Header />
             <Landing />
             <main>
-                <Divider />
                 <Dryaged />
-                <Menu />
                 <Kurs />
-                <Divider />
                 <Centered />
                 <Divider />
+                <Menu />
                 <Spices />
                 <Cta />
                 <Partner />
