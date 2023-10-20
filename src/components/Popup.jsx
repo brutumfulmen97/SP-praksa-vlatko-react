@@ -1,5 +1,5 @@
 import styles from "../styles/popup.module.scss";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useCallback } from "react";
 import Button from "./Button";
 
 export default function Popup() {
@@ -60,34 +60,4 @@ export default function Popup() {
             </div>
         </div>
     );
-
-    // const content =
-    //     popupOpen === true ? (
-    //         <div className={styles.overlay} id="overlay">
-    //             <div className={styles.popup}>
-    //                 <span
-    //                     className={styles.close_button}
-    //                     id="close-button"
-    //                     onClick={setPopupOpen(false)}
-    //                 >
-    //                     X
-    //                 </span>
-    //                 <p>
-    //                     🌟 Congratulations! You&apos;ve unlocked an exclusive
-    //                     offer! 🌟
-    //                 </p>
-    //                 <p>
-    //                     <strong>Limited Time Offer:</strong>
-    //                 </p>
-    //                 <p>🔥 Get 20% off on your next purchase! 🔥</p>
-    //                 <Button id="claim-button" variant={"primary"}>
-    //                     Claim My Discount
-    //                 </Button>
-    //                 <p>
-    //                     <em>Don&apos;t miss out on this incredible deal!</em>
-    //                 </p>
-    //             </div>
-    //         </div>
-    //     ) : null;
-    // return content;
 }
