@@ -6,19 +6,25 @@ import Divider from "./components/Divider";
 import Centered from "./components/Centered";
 import Cta from "./components/Cta";
 import Partner from "./components/Partner";
+import Awards from "./components/Awards";
 
 function App() {
     return (
         <>
             <Header />
             <Landing />
-            <Divider />
-            <Menu />
-            <Divider />
-            <Centered />
-            <Divider />
-            <Cta />
-            <Partner />
+            <main>
+                <Divider />
+                <Menu />
+                <Divider />
+                <Centered />
+                <Divider />
+                <Cta />
+                <Partner />
+                <Divider />
+                <Awards />
+                <Divider />
+            </main>
             <Footer />
         </>
     );
