@@ -151,7 +151,6 @@ header {
                 }
 
                 .dropdown_content {
-                    border-radius: 10px;
                     position: absolute;
                     top: 20px;
                     right: 10px;
@@ -159,14 +158,6 @@ header {
                     min-width: 160px;
                     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                     z-index: 1;
-
-                    :first-child {
-                        border-radius: 10px 10px 0 0;
-                    }
-
-                    :last-child {
-                        border-radius: 0 0 10px 10px;
-                    }
 
                     a {
                         color: black;
