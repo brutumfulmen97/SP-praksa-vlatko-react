@@ -1,23 +1,7 @@
 import styles from "../styles/menu.module.scss";
+import data from "../data.json";
 
-const menuContent = [
-    {
-        img: "/jelo1.png",
-        text: "Wurstchen",
-    },
-    {
-        img: "/jelo2.png",
-        text: "Hanchen",
-    },
-    {
-        img: "/jelo3.png",
-        text: "Schwein",
-    },
-    {
-        img: "/jelo4.png",
-        text: "Rind",
-    },
-];
+const { menuContent } = data;
 
 export default function Menu() {
     return (

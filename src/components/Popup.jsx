@@ -34,7 +34,6 @@ export default function Popup() {
                 <span
                     className={styles.close_button}
                     id="close-button"
-                    // onClick={setPopupOpen(false)}
                     onClick={() => {
                         document.body.style.overflow = "auto";
                         const popup = document.getElementById("overlay");

@@ -1,0 +1,15 @@
+export { default as Awards } from "./Awards";
+export { default as Button } from "./Button";
+export { default as Centered } from "./Centered";
+export { default as Cta } from "./Cta";
+export { default as Divider } from "./Divider";
+export { default as Dryaged } from "./Dryaged";
+export { default as Header } from "./Header";
+export { default as Footer } from "./Footer";
+export { default as Kurs } from "./Kurs";
+export { default as Landing } from "./Landing";
+export { default as Menu } from "./Menu";
+export { default as Partner } from "./Partner";
+export { default as Popup } from "./Popup";
+export { default as Slider } from "./Slider";
+export { default as Spices } from "./Spices";

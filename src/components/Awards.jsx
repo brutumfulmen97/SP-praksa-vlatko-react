@@ -1,23 +1,7 @@
 import styles from "../styles/awards.module.scss";
+import data from "../data.json";
 
-const awardsContent = [
-    {
-        img: "/nagrada1.svg",
-        text: "Tollit argumentum genau Saepe lobortis",
-    },
-    {
-        img: "/nagrada2.svg",
-        text: "Schneewittchen denique",
-    },
-    {
-        img: "/nagrada3.svg",
-        text: "Grimms Märchen expetenda",
-    },
-    {
-        img: "/nagrada4.svg",
-        text: "Mettwurst mei ullum gloriatur.",
-    },
-];
+const { awardsContent } = data;
 
 export default function Awards() {
     return (

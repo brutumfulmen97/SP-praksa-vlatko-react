@@ -1,6 +1,6 @@
 import styles from "../styles/button.module.scss";
 
-export default function Button({ variant, style, children }) {
+export default function Button({ variant = "primary", style, children }) {
     return (
         <div
             style={style}
