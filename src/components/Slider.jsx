@@ -115,10 +115,18 @@ export default function Slider() {
                 </Swiper>
                 <div className={styles.buttons}>
                     <div className={`${styles.swiper_button_prev} prev`}>
-                        <ArrowLeft />
+                        <ArrowLeft
+                            style={{
+                                color: "white",
+                            }}
+                        />
                     </div>
                     <div className={`${styles.swiper_button_next} next`}>
-                        <ArrowRight />
+                        <ArrowRight
+                            style={{
+                                color: "white",
+                            }}
+                        />
                     </div>
                 </div>
             </div>
