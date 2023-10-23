@@ -14,23 +14,8 @@ export default function Cta() {
         >
             <div className={styles.filter}>
                 <div className={styles.section__cta_info}>
-                    <h2
-                    // className="relax"
-                    // data-rellax-speed="-1"
-                    // data-rellax-zindex="5"
-                    // data-rellax-percentage="0.4"
-                    >
-                        Fleischversand
-                    </h2>
-                    <Button
-                        variant={"secondary"}
-                        // className="relax"
-                        // data-rellax-speed="-1"
-                        // data-rellax-zindex="5"
-                        // data-rellax-percentage="0.3"
-                    >
-                        Jetzt bestellen
-                    </Button>
+                    <h2>Fleischversand</h2>
+                    <Button variant={"secondary"}>Jetzt bestellen</Button>
                 </div>
             </div>
         </Parallax>
