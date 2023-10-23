@@ -24,6 +24,7 @@ export default function Slider() {
                 </div>
                 <Swiper
                     effect={"coverflow"}
+                    spaceBetween={10}
                     grabCursor={true}
                     centeredSlides={true}
                     slidesPerView={1}

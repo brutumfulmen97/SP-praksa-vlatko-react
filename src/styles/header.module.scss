@@ -79,6 +79,13 @@ header {
                 display: inline-block;
                 cursor: pointer;
 
+                .dropdown_title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.5rem;
+                }
+
                 .dropdown_content {
                     border-radius: 10px;
                     position: absolute;

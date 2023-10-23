@@ -5,6 +5,7 @@ import sat from "../assets/sat.svg";
 import { useContext, useEffect, useState } from "react";
 import { useWindowReSize } from "../hooks/useWindowResize";
 import { ThemeContext } from "../context/theme-context";
+import { ChevronDown } from "lucide-react";
 
 export default function Header() {
     const [isTabletMenuOpen, setIsTabletMenuOpen] = useState(false);
@@ -66,7 +67,10 @@ export default function Header() {
                                     setIsTabletMenuOpen(!isTabletMenuOpen)
                                 }
                             >
-                                More 🔽
+                                <div className={styles.dropdown_title}>
+                                    <p>More</p>
+                                    <ChevronDown />
+                                </div>
                                 {isTabletMenuOpen && (
                                     <div className={styles.dropdown_content}>
                                         <a href="#">Die Metzgerei</a>
