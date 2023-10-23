@@ -3,7 +3,7 @@
 .section__cta {
     position: relative;
     width: 100%;
-    height: 30vh;
+    height: max(30vh, 400px);
 
     img {
         width: 100%;
@@ -21,7 +21,7 @@
 
         .section__cta_info {
             position: absolute;
-            top: 15vh;
+            top: 200px;
             left: 50%;
             transform: translate(-50%, -50%);
             display: flex;

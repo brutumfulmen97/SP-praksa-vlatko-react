@@ -42,6 +42,28 @@ export default function Header() {
                         }}
                     />
                 </div>
+                <div className={styles.dark_mode_toggle}>
+                    <label htmlFor="checkbox" className={styles.switch}>
+                        <input
+                            type="checkbox"
+                            id="checkbox"
+                            checked={theme === "dark"}
+                            onChange={(e) => {
+                                if (e.target.checked) {
+                                    setTheme("dark");
+                                } else {
+                                    setTheme("light");
+                                }
+                            }}
+                        />
+                        <div
+                            className={`${styles.klizac}`}
+                            style={{
+                                borderRadius: "34px",
+                            }}
+                        ></div>
+                    </label>
+                </div>
                 <nav className={styles.header__nav}>
                     {!isMobile && !isTablet && (
                         <div className={styles.header__nav_xl}>

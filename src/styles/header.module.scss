@@ -23,6 +23,70 @@ header {
         justify-content: space-between;
         align-items: center;
 
+        .dark_mode_toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 100px;
+
+            @media #{$tablet} {
+                margin-left: calc(150px + 5vw);
+            }
+
+            @media #{$laptop} {
+                margin-left: calc(100px + 15vw);
+            }
+            .switch {
+                display: inline-block;
+                height: 30px;
+                position: relative;
+                width: 60px;
+
+                input {
+                    display: none;
+                }
+
+                .klizac {
+                    background-color: #ccc;
+                    bottom: 0;
+                    cursor: pointer;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transition: 0.4s;
+                }
+
+                .klizac:before {
+                    background-color: #fff;
+                    bottom: 2px;
+                    content: "";
+                    height: 26px;
+                    left: 4px;
+                    position: absolute;
+                    transition: 0.4s;
+                    width: 26px;
+                    border-radius: 50%;
+                }
+
+                input:checked + .klizac {
+                    background-color: #545454;
+                }
+
+                input:checked + .klizac:before {
+                    transform: translateX(26px);
+                }
+
+                .klizac.round {
+                    border-radius: 34px;
+                }
+
+                .klizac.round:before {
+                    border-radius: 50%;
+                }
+            }
+        }
+
         .header__logo {
             cursor: pointer;
             width: 93px;

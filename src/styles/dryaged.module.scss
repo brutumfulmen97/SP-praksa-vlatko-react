@@ -71,6 +71,8 @@
         flex-shrink: 0;
 
         .gore {
+            display: grid;
+            place-content: center;
             width: 100%;
             margin-bottom: 1rem;
         }

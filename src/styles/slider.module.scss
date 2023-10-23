@@ -16,10 +16,15 @@
         position: relative;
 
         .znak {
+            display: none;
             position: absolute;
             z-index: 1000;
-            bottom: 5%;
+            bottom: 5px;
             right: 45%;
+
+            @media #{$laptop} {
+                display: block;
+            }
         }
 
         .buttons {
